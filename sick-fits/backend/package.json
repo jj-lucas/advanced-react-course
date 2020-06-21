@@ -38,6 +38,7 @@
     "graphql": "^14.0.0",
     "graphql-playground-middleware-express": "^1.7.18",
     "graphql-playground-middleware-lambda": "^1.7.19",
-    "cucumber-html-reporter": "^5.2.0"
+    "cucumber-html-reporter": "^5.2.0",
+    "marked": "0.6.1"
   }
 }

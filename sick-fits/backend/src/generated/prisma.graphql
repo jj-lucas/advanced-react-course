@@ -1,5 +1,5 @@
 # source: https://eu1.prisma.sh/lucas-gabriel-salina-dovidio/sick-fits/dev
-# timestamp: Sun Jun 21 2020 20:45:09 GMT+0200 (Central European Summer Time)
+# timestamp: Sun Jun 21 2020 20:48:47 GMT+0200 (Central European Summer Time)
 
 type AggregateItem {
   count: Int!
