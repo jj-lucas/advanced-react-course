@@ -51,12 +51,14 @@ const Cart = () => {
 								<CartItem key={cartItem.id} cartItem={cartItem} />
 							))}
 						</ul>
-						<footer>
-							<p>{formatMoney(caclTotalPrice(me.cart))}</p>
-							<TakeMyMoney>
-								<SickButton>Checkout</SickButton>
-							</TakeMyMoney>
-						</footer>
+						{me.cart.length > 0 && (
+							<footer>
+								<p>{formatMoney(caclTotalPrice(me.cart))}</p>
+								<TakeMyMoney>
+									<SickButton>Checkout</SickButton>
+								</TakeMyMoney>
+							</footer>
+						)}
 					</CartStyles>
 				)
 			}}
