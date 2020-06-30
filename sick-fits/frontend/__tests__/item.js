@@ -2,6 +2,7 @@ import ItemComponent from '../components/Item'
 import { shallow } from 'enzyme'
 import { ExpandAbstractTypes } from 'graphql-tools'
 import { isExists } from 'date-fns'
+import toJSON from 'enzyme-to-json'
 
 const fakeItem = {
 	id: 'ABC123',
@@ -13,7 +14,7 @@ const fakeItem = {
 }
 
 describe('<Item/>', () => {
-	fit('renders and displays properly', () => {
+	/*it('renders and displays properly', () => {
 		const wrapper = shallow(<ItemComponent item={fakeItem} />)
 		const PriceTag = wrapper.find('PriceTag')
 		expect(PriceTag.children().text()).toBe('$50')
@@ -29,5 +30,10 @@ describe('<Item/>', () => {
 		expect(buttonList.find('Link')).toHaveLength(1)
 		expect(buttonList.find('Link').exists()).toBe(true)
 		expect(buttonList.find('Link')).toBeTruthy
+    })*/
+
+	it('renders and matches the snapshot', () => {
+		const wrapper = shallow(<ItemComponent item={fakeItem} />)
+		expect(toJSON(wrapper)).toMatchSnapshot()
 	})
 })
