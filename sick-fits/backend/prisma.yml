@@ -1,5 +1,6 @@
 #endpoint: ${env:PRISMA_ENDPOINT}
-endpoint: https://lucsali-test-be7eaa91b0.herokuapp.com/sick-fits-prod/prod
+#endpoint: https://lucsali-test-be7eaa91b0.herokuapp.com/sick-fits-prod/prodendpoint: https://lucsali-sf-prisma-27cde7849a.herokuapp.com/sf-prisma-prod/prod
+
 datamodel: datamodel.graphql
 secret: ${env:PRISMA_SECRET}
 
