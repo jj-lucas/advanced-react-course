@@ -20,9 +20,6 @@ const CURRENT_USER_QUERY = gql`
 					image
 				}
 			}
-			orders {
-				id
-			}
 		}
 	}
 `
